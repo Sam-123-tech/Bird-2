@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flying Bird Animation</title>
+    <style>
+        body{
+            background: url(55.jpg);
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+        }
+        .cc{
+            position: relative;
+            width: 40%;
+            left: 100%;
+            animation: fly 5s infinite;
+        }
+        @keyframes fly{
+            0%{
+                left: -50%;
+                top: 5px;
+            }
+            25%{
+                top: 150px;
+            }
+            50%{
+                top: 30px;
+            }
+            75%{
+                top: 25px;
+            }
+            100%{
+               right: -100px;
+                top: 105px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cc">
+        <img src="cc.gif" class="cc">
+    </div>
+</body>
+</html>
